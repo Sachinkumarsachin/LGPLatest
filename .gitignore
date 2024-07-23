@@ -1,0 +1,11 @@
+node_modules
+package-lock.json
+reports
+driver-logs
+appium.log
+allure-report
+allure-results
+apps
+logs
+junit-reports
+local.log

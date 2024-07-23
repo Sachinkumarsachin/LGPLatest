@@ -1,0 +1,15 @@
+2024-06-21 17:04:26 - [32minfo[39m: Creating configuration file...
+2024-06-21 17:04:26 - [34mdebug[39m: Unable to resolve module with requireModuleV3 with error: Error: Cannot find module 'selenium-webdriver'
+Require stack:
+- C:\LGP Automation\LionsGatePlay-main\LionsGatePlay-main\node_modules\browserstack-node-sdk\src\helpers\helper.js
+- C:\LGP Automation\LionsGatePlay-main\LionsGatePlay-main\node_modules\browserstack-node-sdk\src\bin\setup.js
+2024-06-21 17:04:26 - [34mdebug[39m: requireModuleV2 :: module - selenium-webdriver/package.json, package - selenium-webdriver
+2024-06-21 17:04:26 - [34mdebug[39m: Getting selenium-webdriver/package.json from C:\LGP Automation\LionsGatePlay-main\LionsGatePlay-main
+2024-06-21 17:04:26 - [34mdebug[39m: selenium-webdriver/package.json doesn't exist at C:\LGP Automation\LionsGatePlay-main\LionsGatePlay-main
+2024-06-21 17:04:26 - [34mdebug[39m: Getting selenium-webdriver/package.json from path C:\LGP
+2024-06-21 17:04:26 - [34mdebug[39m: Getting selenium-webdriver/package.json from C:\Users\Rajakumar\AppData\Roaming\npm\node_modules
+2024-06-21 17:04:26 - [34mdebug[39m: Error while loading package. Error: selenium-webdriver/package.json doesn't exist.
+2024-06-21 17:04:26 - [34mdebug[39m: Firing SDK event for funnel data: {"userName":"rajakumars_oDe5C0","accessKey":"zzvLgS3z8oDHzukyPHCS","event_type":"SDKSetup","detectedFramework":"","buildHashedId":"","optimalHubUrl":[],"event_properties":{"testhub_uuid":"","product_map":{"observability":true,"accessibility":true,"percy":false,"automate":true,"app_automate":false},"language_framework":"node-setup","referrer":"nodeagent/1.33.7","frameworkVersion":null,"language":"nodejs","product":["automate"],"languageVersion":"v18.16.0","buildName":"browserstack build","buildIdentifier":"#${BUILD_NUMBER}","os":"Windows_NT","hostname":"LENOVO-L14-GEN-2","seleniumVersion":null}}
+2024-06-21 17:04:26 - [32minfo[39m: Adding new script(s) in package.json...
+2024-06-21 17:04:26 - [32minfo[39m: Setup completed
+2024-06-21 17:04:26 - [34mdebug[39m: API Event SDKSetup response - {"data":{"message":"SDK Event recorded successfully"},"body":"{\"message\":\"SDK Event recorded successfully\"}","statusCode":200}

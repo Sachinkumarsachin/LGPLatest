@@ -1,0 +1,17 @@
+{
+    "LPGWEB": {
+        "Login_Live_URL": "https://lionsgateplay.com/",
+        "Login_Dev_URL": "https://pre.lionsgateplay.com/"
+    },
+    "loginPage_Credentials": {
+        "subscribed_Username": "harish8@yopmail.com",
+        "subscribed_Password": "123456",
+        "login_MobileNumber": "917483546862",
+        "non_Subscribed_Username": "nonsubaut@yopmail.com",
+        "voucherCode": "M03LGPFREE2023",
+        "voucherSubscribed_username": "checkonce@yopmail.com",
+        "expiredUser_Username": "atvbetaotp@yopmail.com",
+        "SubscribedUser2": "harish5@yopmail.com",
+        "SubscribedUser3": "harish8@yopmail.com"
+    }
+}
