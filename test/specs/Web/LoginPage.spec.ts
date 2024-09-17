@@ -5,7 +5,7 @@ import WebTestData from "../../testdata/WebTestData.json";
 import onBoardingPage from "../../pageobjects/webSanityPages/onBoardingPage";
 
 describe(`Login/Signup page Test Cases`, async () => {
-  it.only(`Validate the Login Functionality via Email ID`, async () => {
+  it(`Validate the Login Functionality via Email ID`, async () => {
     const onlineStatus = await browser.execute(() => navigator.onLine);
     driver.logUtil("Pass", `Internet connection is enabled : ${onlineStatus}`);
     await OnBoardingPage.loginToApplication();

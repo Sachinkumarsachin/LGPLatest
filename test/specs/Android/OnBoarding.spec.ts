@@ -9,6 +9,7 @@ describe("Android OnBoarding sanity Test Cases", async () => {
     //only
     it("TC_002. Validate if Intro screen (Banner, CTAs - Get Started ,Login and Explore) is displayed for Guest User", async () => {
         await OnBordingPage.verifySplashScreen();
+        await browser.pause(5000);
         await OnBordingPage.verifyIntroScreen();
     });
 

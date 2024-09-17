@@ -22,7 +22,7 @@ describe("Android DetailScreen sanity Test Cases", async () => {
     });
 
     //only
-    it.only("TC_021. Validate the attributes in movie detail screen as a Non-subscribed/Subscribed user", async () => {
+    it("TC_021. Validate the attributes in movie detail screen as a Non-subscribed/Subscribed user", async () => {
         // await OnBordingPage.verifySplashScreen();
         // await OnBordingPage.verifyIntroScreen();
         await OnBordingPage.verifyHomeScreenForSubscribedUser("upitest2@yopmail.com");

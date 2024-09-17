@@ -261,7 +261,7 @@ describe("Parental Control Test Cases", async()=>{
     await browser.pause(3000);
      await (await ParentalControlPage.contentHeadersList(carouselHeader.replace('View All', '').trim()).scrollIntoView());
   await(await ParentalControlPage.contentRailHeaders(carouselHeader.replace('View All', '').trim(),1)).combinedClick("First content");
-  await (await ParentalControlPage.AgeRatingsFromContentDetailScreen("UA-7")).findElementAndVerifyText("UA-7"?? "U");
+  await (await ParentalControlPage.AgeRatingsFromContentDetailScreen("UA-7")).findElementAndVerifyText("UA-7" ?? "U");
   await (
     await OnBoardingPage.settingsButtonWithTooltip
   ).combinedClick("Settings Tooltip");
@@ -272,7 +272,7 @@ describe("Parental Control Test Cases", async()=>{
   });
 
 
-  it.only("Verify that appropriate contents displayed in Continue watching rail", async()=>{
+  it("Verify that appropriate contents displayed in Continue watching rail", async()=>{
     const onlineStatus = await browser.execute(() => navigator.onLine);
     driver.logUtil("Pass", `Internet connection is enabled : ${onlineStatus}`);
     await OnBoardingPage.loginToApplication();

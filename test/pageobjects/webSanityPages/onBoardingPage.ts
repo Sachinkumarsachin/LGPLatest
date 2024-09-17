@@ -106,10 +106,8 @@ class WebOnboardingpage {
     //   return $(`
     // //  div[@class='owl-item active center']/child::div[@class='carousel-item js-carousel-item active'] | //div[@class='owl-item active center']/child::div[@class='carousel-item js-carousel-item']`);
     // }
-    // return $(`.owl-item.active.center>div
-    //   `);
-    //return $$('//div[@class="carousel-item js-carousel-item"]')
-    return $$('//div[@id="carosuel-2"]//div[@class="owl-item active"]//img')
+    return $(`.owl-item.active.center>div
+  `);
   }
 
   get courouselBannerNameInCenter() {
@@ -145,9 +143,7 @@ class WebOnboardingpage {
   }
 
   get NextButtonInCouroselBanner() {
-    // return $(`//div[@id='car-hero']//a[@role='button' and @data-slide='next']`);
-    return $(`(//a[@class="carousel-control right"])[2]`);
-
+    return $(`//div[@id='car-hero']//a[@role='button' and @data-slide='next']`);
   }
 
   get searchBar() {
@@ -258,7 +254,8 @@ class WebOnboardingpage {
   }
 
   get episodeInContentUnderShowsTab() {
-    return $(`(//*[name()='svg' and @class='icon Chapter-play'])[1]`);
+    return $(`(//div[@class='Chapter-image-container'])[1]`)
+    // return $(`(//*[name()='svg' and @class='icon Chapter-play'])[1]`);
   }
   // 3 Months, 12 Months
   subscriptionMonthsText(periodOfMonths: string) {
@@ -629,8 +626,8 @@ class WebOnboardingpage {
     );
   }
 
-  progressButton(lengthOfMovie: string) {
-    return $(`//div[@class='bitdash-prog-btn']/parent::div[@class='bitdash-prog-bar-play' and @style='${lengthOfMovie}']`)
+   progressButton(lengthOfMovie: string){
+return $(`//div[@class='bitdash-prog-btn']/parent::div[@class='bitdash-prog-bar-play' and @style='${lengthOfMovie}']`)
   }
 
   get resumebuttonInPlayerScreen() {
@@ -642,86 +639,126 @@ class WebOnboardingpage {
     return $(`//p[@class='player-error-text']`);
   }
 
-  get audioAndSubtitilesButton() {
+  get audioAndSubtitilesButton(){
     return $(`//button[@class='settings-custom']`);
   }
 
-  get videoQualityButton() {
+  get videoQualityButton(){
     return $(`//button[@class='video-quality-custom']`);
   }
 
-  get playAndPauseButtonInPlayerScreen() {
+  get playAndPauseButtonInPlayerScreen(){
     return $(`//button[@class='bitdash-playpause bitdash-l']`);
   }
 
-  get playButtonInPlayerScreen() {
+  get playButtonInPlayerScreen(){
     return $(`//button[@class='bitdash-playpause bitdash-l' and @data-state='play']`);
   }
 
-  get allcourouselsNames() {
+get allcourouselsNames(){
     return $$(`.owl-carousel.owl-theme.owl-center .owl-stage .owl-item .carousel-item`)
   }
 
-  get rateThisMovieText() {
+  get rateThisMovieText(){
     return $(`//p[text()='Rate this movie/episode']`);
   }
 
-  get audioOptionInPlayerScreen() {
+  get audioOptionInPlayerScreen(){
     return $(`(//div[@class='bitdash-settings-i']/child::h3[@class='bitdash-settings-title bitdash-settings-title--audiotrack'])[1]`);
   }
 
-  get audioLanguagesList() {
-    return $(`//div[@class='bitdash-settings--custom bitdash-settings-pane bitdash-settings--subaudio is-shown']/child::div[@data-audiotrack='true']/child::div/label`);
+  get audioLanguagesList(){
+    return $$(`//div[@class='bitdash-settings--custom bitdash-settings-pane bitdash-settings--subaudio is-shown']/child::div[@data-audiotrack='true']/child::div/label`);
   }
 
-  get subtitlesList() {
-    return $(`//div[@class='bitdash-settings--custom bitdash-settings-pane bitdash-settings--subaudio is-shown']/child::div[@data-subtitles='true']/child::div/label`)
+  get subtitlesList(){
+    return $$(`//div[@class='bitdash-settings--custom bitdash-settings-pane bitdash-settings--subaudio is-shown']/child::div[@data-subtitles='true']/child::div/label`)
   }
 
-  get qualityOptionHeader() {
+  get qualityOptionHeader(){
     return $(`(//div[@class='bitdash-settings--videoquality bitdash-settings-pane']/child::div[@class='bitdash-settings-i']/child::label[text()='Quality'])[1]`)
   }
 
-  get fullScreenOption() {
+  get fullScreenOption(){
     return $(`//button[@data-state='go-fs']`);
   }
 
-  get exitFullScreenOption() {
+  get exitFullScreenOption(){
     return $(`//button[@data-state='cancel-fs']`);
   }
 
-  get fullScreenAndExitFullScreenText() {
+  get fullScreenAndExitFullScreenText(){
     return $(`//div[@class='bitdash-btns bitdash-btns-defaults bitdash-btns-go_fs']/child::button[@data-state='go-fs']`);
   }
 
-  get playAndPauseButton() {
+  get playAndPauseButton(){
     return $(`//button[@class='bitdash-playpause bitdash-l' and text()='Play/Pause']`);
   }
 
-  get muteAndUnmuteButton() {
+  get muteAndUnmuteButton(){
     return $(`//button[@class='bitdash-mute' and text()='Mute/Unmute']`);
   }
 
-  get muteAndUnmuteText() {
+  get muteAndUnmuteText(){
     return $(`//button[@class='bitdash-mute']`);
   }
 
-  get voulmeChangeButton() {
+  get voulmeChangeButton(){
     return $(`//div[@class='bitdash-vol-btn']`);
   }
 
-  get backArrowImage() {
+  get backArrowImage(){
     return $(`//span[@class='icon icon-arrow-back']`);
   }
 
-  get playButtonTextInPlayerScreen() {
+  get playButtonTextInPlayerScreen(){
     return $(`//div[@class='bitdash-btns bitdash-btns-defaults bitdash-btns-play']`);
   }
 
-  get pauseButtonInPlayerScreen() {
+  get pauseButtonInPlayerScreen(){
     return $(`//button[@class='bitdash-playpause bitdash-l' and @data-state='pause']`);
   }
 
+  get toWatchThisContentTextInSubscriptionPopup(){
+    return $(`(//div[@class='modal-content']/div[@class='modal-body']/child::p)[1]`);
+  }
+
+  get crossXButtonInSignUPORLoginpopup(){
+    return $(`//span[@class='icon icon-close']`);
+  }
+
+  // Here to pass as parameters as "Subtitles: ", "Languages: ","Country of origin: ","Director: "
+ langauagesAndSubtitlesListInContentDetailScreen(options:string){
+    return $(`(//dl[@class='detail-list']/descendant::dt[text()='${options}']/following-sibling::dd)[1]`)
+  }
+
+  get languageSelectedWithTickMark(){
+    return $(`(//label[@class='audiotrack-select is-selected'])[1]`);
+  }
+
+   nonSelectedLangauagesInAudio(language:string){
+    return $(`//div[@data-is-visible='1']/div[@class='bitdash-settings-i' and @data-audiotrack='true']//div/label[text()='${language}']`)
+  }
+
+  get videoQualityOptionText(){
+    return $(`(//div[@class='bitdash-settings--videoquality bitdash-settings-pane'])[1]//label[text()='Quality']`);
+  }
+
+  get videoQualityOptions(){
+    return $$(`(//div[@class='bitdash-settings--videoquality bitdash-settings-pane'])[1]//div[@class='bitdash-settings-radio']/label`)
+  }
+
+  get subtitlesTextInPlayerScreen(){
+    return $(`//div[@class='bitdash-subs']//ul/li/div/p`);
+  }
+
+  get subtitlesEnglishOption(){
+    return $(`//label[text()='English [CC]']`);
+  }
+
+  get homepagehiglightbar(){
+    return $(`.is-active .Navbar-item-link`)
+  }
 
 
   async checkInternetConnectionIsEnabled() {

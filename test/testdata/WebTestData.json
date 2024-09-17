@@ -13,5 +13,12 @@
         "expiredUser_Username": "atvbetaotp@yopmail.com",
         "SubscribedUser2": "harish5@yopmail.com",
         "SubscribedUser3": "harish8@yopmail.com"
+    },
+    
+       "assignmentCredentials":{
+        "Non_Sub_User" : "nonsubaut@yopmail.com",
+        "Sub_User" : "Upitest2@yopmail.com",
+        "Password": "123456"
+       
     }
 }

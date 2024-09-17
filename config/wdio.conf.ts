@@ -592,6 +592,20 @@ export const config: Options.Testrunner = {
           : await browser.reloadSession();
       }
       i++;
+      
+      // if (browserISMobile) {
+      //   await driver.reloadSession();
+      // } else {
+      //   await browser.reloadSession();
+      // }
+      
+      // // Clear local storage
+      // await driver.execute(() => {
+      //   localStorage.clear();
+      // });
+      
+      // }
+      // i++;
     });
 
     await browser.addCommand(

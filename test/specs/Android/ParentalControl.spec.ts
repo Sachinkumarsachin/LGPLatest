@@ -50,7 +50,7 @@ describe("Android Parental Control sanity Test Cases", async () => {
         await SubscriptionsPage.validateSubscribePopup();
     });
 
-    it.only("TC_064,TC_065. Verify that user is able to add content to watchlist, play & download the content post applying parental control  for subscribed user", async () => {
+    it("TC_064,TC_065. Verify that user is able to add content to watchlist, play & download the content post applying parental control  for subscribed user", async () => {
         // await OnBordingPage.verifySplashScreen();
         // await OnBordingPage.verifyIntroScreen();
         await OnBordingPage.enterLoginCredential('upitest2@yopmail.com');

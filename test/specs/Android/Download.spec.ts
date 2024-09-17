@@ -74,7 +74,7 @@ describe("Android Download sanity Test Cases", async () => {
     });
 
     //only
-    it.only("TC_052. Verify if user is able to Pause ,Resume and Cancel the downloading  content in Detail screen", async () => {
+    it("TC_052. Verify if user is able to Pause ,Resume and Cancel the downloading  content in Detail screen", async () => {
         // await OnBordingPage.verifySplashScreen();
         // await OnBordingPage.verifyIntroScreen();
         await OnBordingPage.enterLoginCredential("payutest256@yopmail.com");

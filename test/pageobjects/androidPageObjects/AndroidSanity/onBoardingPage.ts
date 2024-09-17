@@ -2,6 +2,7 @@ import WebOnboardingpage from "../../webSanityPages/onBoardingPage";
 import AndroidTestData from "../../../testdata/AndroidTestData.json";
 import { th } from "date-fns/locale";
 import RandomApi from "../../../../test/api/api-tests/randomAPI";
+import { Console } from "console";
 
 class OnBordingPage {
     get splashScreen() {
@@ -194,8 +195,10 @@ class OnBordingPage {
         await (await this.passwordTxtField).setValue(AndroidTestData.OnBoarding.subscribed_Password, "Password text field");
         await (await this.clickShowPassword).combinedClick("Show Password Icon")
         await (await this.loginBtn).combinedClick("Login");
+        if(await(await this.allowButton).isDisplayed())
+        {  
         await (await this.allowButton).combinedClick("Allow");
-
+        }else{console.log("Popup not displayed");}
         let tabsSections = await this.verifyHomePage;
         for (let i = 0; i <= tabsSections.length - 1; i++) {
             let tab = await tabsSections[i].getText();

@@ -179,10 +179,12 @@ class SubCriptionPage {
         await expect(await this.verifyDueToDayTitle).toHaveText(dueDayTitle);
         await (await this.verifyPriceTitle).verifyElementIsDisplayedTrue("Price Title")
         await expect(await this.verifyBillQutTitle).toHaveText(quaterAnnually);
+        await browser.pause(5000);
         await expect(await this.verifyQuaterlyPlanBtn).toBeDisabled();
         await (await this.verifyQuaterlyPlanBtn).findElementAndVerifyText("PAY INR 699 FOR ANNUAL PLAN");
         await (await this.verifyAnotherPaymentMathodBtn).verifyElementIsDisplayedTrue("Another Payment Method Button");
         await (await this.enterCVVNumber).setValue("433", "CVV Number");
+        await (await this.enterCVVNumber).clearValue();
         await (await this.verifyQuaterlyPlanBtn).verifyElementIsEnabledTrue("Annual Plan Button");
 
     }

@@ -284,7 +284,7 @@ describe("Landing Screen and My List Page Test Cases", async () => {
     ).findElementAndVerifyText("TV Shows");
   });
 
-  it.only("Validate that user is able to add any Shows to 'My List' page  ", async () => {
+  it("Validate that user is able to add any Shows to 'My List' page  ", async () => {
     const onlineStatus = await browser.execute(() => navigator.onLine);
     driver.logUtil("Pass", `Internet connection is enabled : ${onlineStatus}`);
     await OnBoardingPage.loginToApplication();

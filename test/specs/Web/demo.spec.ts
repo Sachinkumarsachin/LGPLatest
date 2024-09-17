@@ -158,7 +158,7 @@ describe("OnBoarding Test Cases", async () => {
          ).findElementAndVerifyText("SHARE");  */
     });
 
-    it.only("Test case 2:Validate the attributes in movie details screen ", async () => {
+    it("Test case 2:Validate the attributes in movie details screen ", async () => {
         await OnBoardingPage.loginToApplication();
         await (
             await OnBoardingPage.noThanksPopupBeforeLogin

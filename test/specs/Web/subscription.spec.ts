@@ -254,7 +254,7 @@ describe(" Subscription test cases", async()=>{
         ).findElementAndVerifyText("VOUCHER CODE");
     });
 
-    it.only("Validate that on entering valid voucher", async()=>{
+    it("Validate that on entering valid voucher", async()=>{
         await OnBoardingPage.loginToApplication();
         await (
           await OnBoardingPage.noThanksPopupBeforeLogin
@@ -330,7 +330,7 @@ describe(" Subscription test cases", async()=>{
         ).verifyElementIsEnabledTrue("starting watching button");
     });
     
-    it.only("Validate that on successful purchase Voucher respective", async () =>{
+    it("Validate that on successful purchase Voucher respective", async () =>{
         await OnBoardingPage.loginToApplication();
         await (
           await OnBoardingPage.noThanksPopupBeforeLogin

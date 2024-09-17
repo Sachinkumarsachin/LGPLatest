@@ -24,14 +24,14 @@ import type { Options } from "@wdio/types";
       "appium:platformName": "Android",
       "appium:deviceName": "9304b15c",
       "appium:platformVersion": "14",
-      // "appium:deviceName": "RZ8N930890Y",
-      // "appium:platformVersion": "12",
+    //   "appium:deviceName": "RZ8N930890Y",
+    //   "appium:platformVersion": "12",
       "appium:automationName": "uiautomator2",
       //Only For Debug build
-      "appium:app": join(
-        process.cwd(),
-        "Apps/mobile-lionsgateplay-release-6.14.1-3094(1).apk"
-      ),
+    //   "appium:app": join(
+    //     process.cwd(),
+    //     "Apps/mobile-lionsgateplay-debug-6.13.2-3090.apk"
+    //   ),
       "appium:appPackage": "com.lionsgateplay.videoapp",
       "appium:appActivity":
         "com.parsifal.starz.ui.features.launcher.LauncherActivity",

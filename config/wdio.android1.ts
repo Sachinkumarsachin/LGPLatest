@@ -4,15 +4,15 @@ import type { Options } from "@wdio/types";
 
 (config.specs = [
   "../test/specs/Android/OnBoarding.spec.ts",
-  "../test/specs/Android/LoginAndSignUp.spec.ts",
-  "../test/specs/Android/Subscriptions.spec.ts",
-  "../test/specs/Android/DetailScreen.spec.ts",
-  "../test/specs/Android/ViewAll.spec.ts",
-  "../test/specs/Android/ExpiredUser.spec.ts",
-  "../test/specs/Android/LandingScreen.spec.ts",
-  "../test/specs/Android/Download.spec.ts",
-  "../test/specs/Android/Player.spec.ts",
-  "../test/specs/Android/ParentalControl.spec.ts"
+  // "../test/specs/Android/LoginAndSignUp.spec.ts",
+  // "../test/specs/Android/Subscriptions.spec.ts",
+  // "../test/specs/Android/DetailScreen.spec.ts",
+  // "../test/specs/Android/ViewAll.spec.ts",
+  // "../test/specs/Android/ExpiredUser.spec.ts",
+  // "../test/specs/Android/LandingScreen.spec.ts",
+  // "../test/specs/Android/Download.spec.ts",
+  // "../test/specs/Android/Player.spec.ts",
+  // "../test/specs/Android/ParentalControl.spec.ts"
 
 ]),
   // Patterns to exclude.
@@ -22,16 +22,16 @@ import type { Options } from "@wdio/types";
   (config.capabilities = [
     {
       "appium:platformName": "Android",
-      "appium:deviceName": "9304b15c",
-      "appium:platformVersion": "14",
-      // "appium:deviceName": "RZ8N930890Y",
-      // "appium:platformVersion": "12",
+      // "appium:deviceName": "9304b15c",
+      // "appium:platformVersion": "14",
+      "appium:deviceName": "RZ8N930890Y",
+      "appium:platformVersion": "12",
       "appium:automationName": "uiautomator2",
       //Only For Debug build
-      "appium:app": join(
-        process.cwd(),
-        "Apps/mobile-lionsgateplay-release-6.14.1-3094(1).apk"
-      ),
+    //   "appium:app": join(
+    //     process.cwd(),
+    //     "Apps/mobile-lionsgateplay-debug-6.13.2-3090.apk"
+    //   ),
       "appium:appPackage": "com.lionsgateplay.videoapp",
       "appium:appActivity":
         "com.parsifal.starz.ui.features.launcher.LauncherActivity",

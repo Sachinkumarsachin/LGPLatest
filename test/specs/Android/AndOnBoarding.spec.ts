@@ -24,7 +24,7 @@ describe("Android sanity Test Cases", () => {
     await console.log(`Home Page is displayed`);
   });
 
-  it.only("Validate user is redirected for Non Subscribed user", async () => {
+  it("Validate user is redirected for Non Subscribed user", async () => {
     await AndroidPage.validateHomePageIsDisplayedOrNot();
   });
 
